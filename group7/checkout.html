@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIRLSING · Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">GIRLSING</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Shop</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li class="cart-wrapper"><button class="cart-btn" id="openCartBtn">🛒</button><span class="cart-count" id="cartCountBadge">0</span></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Checkout</h2>
+  <div class="checkout-grid">
+    <div class="checkout-form">
+      <h3>Shipping Information</h3>
+      <form id="checkoutForm">
+        <input type="text" id="fullname" placeholder="Full name" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="postal" placeholder="Postal code" required>
+        <div class="payment-section">
+          <h4>Payment Method</h4>
+          <label><input type="radio" name="payment" value="wechat" checked> WeChat Pay</label>
+          <label><input type="radio" name="payment" value="alipay"> Alipay</label>
+          <label><input type="radio" name="payment" value="bank"> Bank Card</label>
+        </div>
+        <button type="submit" class="btn-primary">Place Order</button>
+      </form>
+    </div>
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <div id="summaryItems"></div>
+      <div class="summary-total">Total: <span id="summaryTotal">$0.00</span></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col"><h4>GIRLSING</h4><a href="index.html">Home</a><a href="collection.html">Shop</a><a href="wishlist.html">Wishlist</a><a href="member.html">Member</a></div>
+    <div class="footer-col"><h4>Support</h4><a class="footer-link" data-type="help">Help Center</a><a class="footer-link" data-type="return">Return Policy</a><a class="footer-link" data-type="track">Track Order</a></div>
+    <div class="footer-col"><h4>Legal</h4><a class="footer-link" data-type="privacy">Privacy Policy</a><a class="footer-link" data-type="terms">Terms of Use</a></div>
+    <div class="footer-col"><h4>Payment</h4><div>WeChat Pay / Alipay / Bank Card</div></div>
+  </div>
+  <div class="footer-bottom">© 2025-2026 GIRLSING</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
